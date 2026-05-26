@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+
+# Model checkpoints (2GB+)
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.onnx
+model/checkpoints/
+
+# Training data & images (3GB+)
+Hololeuca/
+HololeucaGPU/
+model/fotos/
+model/hololeuca img*/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Lightning/ML logs
+lightning_logs/
+deepforest_logs/
+debug_logs/
+training_logs/

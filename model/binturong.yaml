@@ -1,0 +1,24 @@
+# environment.yml
+name: binturong
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=11.8
+  - pip:
+    - deepforest==1.5.2
+    - albumentations==1.3.1
+    - pytorch-lightning
+    - pandas
+    - scikit-learn
+    - matplotlib
+    - tensorboard
+    - opencv-python-headless
+    - tqdm
