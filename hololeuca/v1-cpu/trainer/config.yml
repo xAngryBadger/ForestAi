@@ -1,0 +1,6 @@
+# Config file for DeepForest pytorch module
+
+train:
+    scheduler:
+        type: None
+        params: {}

@@ -1,14 +1,15 @@
+import os
 import pandas as pd
 import os
 
 # 🔧 CONFIGURAÇÕES
 CLASSES_VALIDAS = ["tree", "fedegoso", "mudafedegoso"]  # <- todas em minúsculo
-PASTA_IMAGENS = r"E:/deepbug ai/model/fotos"
+PASTA_IMAGENS = os.path.join(os.path.dirname(__file__), "fotos")
 
 ARQUIVOS_CSV = [
-    r"E:/deepbug ai/model/labels.csv",
-    r"E:/deepbug ai/model/checkpoints/train_annotations.csv",
-    r"E:/deepbug ai/model/checkpoints/val_annotations.csv"
+    os.path.join(os.path.dirname(__file__), "labels.csv"),
+    os.path.join(os.path.dirname(__file__), "checkpoints", "train_annotations.csv"),
+    os.path.join(os.path.dirname(__file__), "checkpoints", "val_annotations.csv")
 ]
 
 print("=" * 60)

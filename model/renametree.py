@@ -3,9 +3,9 @@ import os
 
 # Caminho dos CSVs
 csv_files = [
-    "E:/deepbug ai/model/labels.csv",
-    "E:/deepbug ai/model/checkpoints/train_annotations.csv",
-    "E:/deepbug ai/model/checkpoints/val_annotations.csv"
+    "model/labels.csv",
+    "model/checkpoints/train_annotations.csv",
+    "model/checkpoints/val_annotations.csv"
 ]
 
 for file in csv_files:

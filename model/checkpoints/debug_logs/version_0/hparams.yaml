@@ -1,0 +1,27 @@
+config_args:
+  train:
+    batch_size: 4
+    csv_file: E:\deepbug ai\model\checkpoints\train_annotations.csv
+    epochs: 120
+    fast_dev_run: false
+    label_dict:
+      fedegoso: 0
+      mudafedegoso: 1
+    lr: 0.0005
+    num_classes: 2
+    num_workers: 2
+    preload_images: false
+    root_dir: E:\deepbug ai\model\fotos
+  validation:
+    batch_size: 4
+    csv_file: E:\deepbug ai\model\checkpoints\val_annotations.csv
+    num_workers: 2
+    root_dir: E:\deepbug ai\model\fotos
+config_file: deepforest_config.yml
+existing_train_dataloader: null
+existing_val_dataloader: null
+label_dict:
+  Tree: 0
+model: null
+num_classes: 1
+transforms: null

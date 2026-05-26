@@ -9,19 +9,22 @@ build/
 venv/
 .venv/
 
-# Model checkpoints (2GB+)
+# Model checkpoints (>100MB, cannot push to GitHub)
 *.ckpt
 *.pt
 *.pth
 *.bin
 *.onnx
-model/checkpoints/
 
 # Training data & images (3GB+)
 Hololeuca/
 HololeucaGPU/
 model/fotos/
 model/hololeuca img*/
+
+# Large ML logs (>100MB)
+model/checkpoints/deepforest_logs/
+model/checkpoints/training_logs/
 
 # IDE
 .vscode/
@@ -34,8 +37,5 @@ model/hololeuca img*/
 Thumbs.db
 desktop.ini
 
-# Lightning/ML logs
+# Lightning/ML logs (large)
 lightning_logs/
-deepforest_logs/
-debug_logs/
-training_logs/

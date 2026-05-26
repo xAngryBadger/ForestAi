@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 
 def validar_csv(arquivo_csv, label_dict):
@@ -61,7 +62,7 @@ def validar_csv(arquivo_csv, label_dict):
 
 # Exemplo de uso:
 if __name__ == "__main__":
-    arquivo_csv = "E:/deepbug ai/model/checkpoints/train_annotations.csv"  # Ajuste para o caminho do seu arquivo
+    arquivo_csv = os.path.join(os.path.dirname(__file__), "checkpoints", "train_annotations.csv")
     label_dict = {'fedegoso': 0, 'mudafedegoso': 1}
     
     validar_csv(arquivo_csv, label_dict)
